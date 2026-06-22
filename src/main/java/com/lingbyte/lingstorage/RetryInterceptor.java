@@ -25,6 +25,7 @@ public class RetryInterceptor implements Interceptor {
     
     @Override
     public Response intercept(Chain chain) throws IOException {
+        System.out.println("halo");
         Request request = chain.request();
         Response response = null;
         IOException lastException = null;
